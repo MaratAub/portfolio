@@ -6,22 +6,104 @@ body {
     font-family: "IBM Plex Mono", sans-serif;
     background-color: #000;
     color: #fff;
+    
+}
+.main, 
+.hero {
+    margin-bottom: 150px;
 }
 .container {
     width: 80%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px; /* Для пространства по краям */
-}
+    }
 
+.section__title {
+color: rgb(255, 255, 255);
+font-size: 55px;
+line-height: 72px;
+margin-bottom: 40px;
+}
 
 /* =========== header ============= */
 .header {
-    padding: 20px 0;
-}
+    position: absolute;
+    top: 34px;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    }
 
- .header__container {
+.header__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
- }
+    height: 55px;
+}
+
+.header__logo {
+    width: 130px;
+    height: 39px;
+    text-decoration: none;
+    color: rgb(27, 255, 7);
+    font-size: 42.41px;
+    font-weight: 700;
+    line-height: 55px;
+    letter-spacing: -11%;
+    text-transform: uppercase;
+}
+.header__nav-list {
+    display: flex;
+}
+
+.header__nav-item {
+    margin-left: 50px;
+}
+
+.header__nav--link {
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    line-height: 23px;
+    text-transform: lowercase;
+    text-decoration: none;
+}
+.header__nav--link:hover {
+    color: rgb(27, 255, 7);
+}
+
+ /* =========== hero ============= */
+
+.hero {
+    position: relative;
+    height: 765px;
+    background-image: url('/resources/background__prev.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero__content {
+    position: absolute;
+    bottom: 94px;
+}
+
+.hero__subtitle{
+    width: 444px;
+    font-size: 20px;
+    line-height: 26px;
+    margin-bottom: 30px;
+}
+
+.hero__title {
+    color: rgb(27, 255, 7);
+    font-size: 80px;
+    line-height: 70px;
+}
+
+
+/* ========== projects ======= */
+
+
+.projects__item {
+    
+}
